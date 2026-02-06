@@ -1,0 +1,28 @@
+{
+  "node": {
+    "609b574b44fd9d1f6ac4fab4ec334d2c9d364a1f33": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/services/geminiService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendMessageToGemini",
+          "filename": "services/geminiService.ts"
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/services/geminiService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendMessageToGemini",
+          "filename": "services/geminiService.ts"
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "action-browser",
+        "app/page": "action-browser"
+      },
+      "filename": "services/geminiService.ts",
+      "exportedName": "sendMessageToGemini"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "RO4FbzRxHRWbt8U3UXrS5yihrXRjBorcchw9dQGSz84="
+}
