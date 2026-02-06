@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4 shadow-lg border-b border-white/10' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-          <span className="text-yellow-400">Varun</span>isReady.Me
+          <span className="text-yellow-400">Pavan</span>isReady.Me
         </a>
 
         {/* Desktop Menu */}
