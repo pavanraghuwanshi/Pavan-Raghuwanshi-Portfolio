@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-2">Selected Works</h2>
           <p className="text-gray-500">A showcase of some of my best projects.</p>
         </div>
-        <a href="#" className="hidden lg:flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors">
+        <a href="https://github.com/pavanraghuwanshi" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors">
           View Github
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
         </a>

@@ -29,6 +29,7 @@ const Navbar: React.FC = () => {
               key={link.name} 
               href={link.href} 
               className="text-sm font-medium text-gray-400 hover:text-yellow-400 transition-colors"
+              {...(link.name === 'Resume' ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
               {link.name}
             </a>
@@ -58,6 +59,7 @@ const Navbar: React.FC = () => {
               href={link.href} 
               className="text-base font-medium text-gray-300 hover:text-yellow-400"
               onClick={() => setIsMobileMenuOpen(false)}
+              {...(link.name === 'Resume' ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
               {link.name}
             </a>

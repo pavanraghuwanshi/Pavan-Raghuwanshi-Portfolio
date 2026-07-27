@@ -18,26 +18,29 @@ const Timeline: React.FC = () => {
       {/* Desktop Timeline Navigation */}
       <div className="hidden lg:flex justify-between items-center relative mb-16 mx-10">
         {/* The horizontal line */}
-        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-800 -z-10"></div>
+        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-800 -z-10 transform -translate-y-1/2"></div>
         
         {EXPERIENCES.map((exp) => {
           const isActive = exp.id === activeId;
           return (
-            <div key={exp.id} className="relative flex flex-col items-center group cursor-pointer" onClick={() => setActiveId(exp.id)}>
-              <div 
-                className={`px-6 py-2 rounded-full border mb-8 transition-all duration-300 w-40 text-center
-                ${isActive 
-                  ? 'bg-gradient-to-r from-orange-500 to-yellow-500 text-black border-transparent font-bold shadow-lg scale-110' 
-                  : 'bg-black border-gray-700 text-gray-400 hover:border-gray-500'}`}
-              >
-                {exp.company}
+            <div key={exp.id} className="relative h-32 flex flex-col items-center justify-center group cursor-pointer w-40" onClick={() => setActiveId(exp.id)}>
+              
+              <div className="absolute bottom-1/2 mb-4 w-full flex justify-center">
+                <div 
+                  className={`px-4 py-2 rounded-full border transition-all duration-300 text-center flex items-center justify-center
+                  ${isActive 
+                    ? 'bg-gradient-to-r from-orange-500 to-yellow-500 text-black border-transparent font-bold shadow-lg scale-110' 
+                    : 'bg-black border-gray-700 text-gray-400 hover:border-gray-500'}`}
+                >
+                  {exp.company}
+                </div>
               </div>
               
               {/* Dot on line */}
               <div className={`w-4 h-4 rounded-full border-2 z-10 transition-colors duration-300 ${isActive ? 'bg-yellow-400 border-yellow-400' : 'bg-black border-gray-600 group-hover:border-gray-400'}`}></div>
 
-              <div className={`absolute top-24 text-xs font-mono transition-colors duration-300 ${isActive ? 'text-yellow-400' : 'text-gray-600'}`}>
-                {exp.period.split('-')[0]}
+              <div className={`absolute top-1/2 mt-4 text-xs font-mono transition-colors duration-300 w-max ${isActive ? 'text-yellow-400' : 'text-gray-600'}`}>
+                {exp.period}
               </div>
             </div>
           );
@@ -69,23 +72,23 @@ const Timeline: React.FC = () => {
         <div className="relative z-10">
           <div className="flex flex-col lg:flex-row gap-8 items-start">
              <div className="flex-shrink-0">
-                <h3 className="text-2xl font-bold text-white mb-1">Developer</h3>
-                <div className="text-sm text-gray-500 mb-6 font-mono">{activeExperience.period}</div>
-                <div className="w-20 h-20 bg-white/5 rounded-xl flex items-center justify-center overflow-hidden border border-white/10">
-                   {/* Placeholder logo */}
-                   <span className="text-2xl font-bold text-white opacity-50">{activeExperience.company.charAt(0)}</span>
-                </div>
-             </div>
+                 <h3 className="text-2xl font-bold text-white mb-1 max-w-[200px] break-words">{activeExperience.role}</h3>
+                 <div className="text-sm text-gray-500 mb-6 font-mono">{activeExperience.period}</div>
+                 <div className="w-20 h-20 bg-white/5 rounded-xl flex items-center justify-center overflow-hidden border border-white/10">
+                    {/* Placeholder logo */}
+                    <span className="text-2xl font-bold text-white opacity-50">{activeExperience.company.charAt(0)}</span>
+                 </div>
+              </div>
 
-             <div className="flex-1">
-               <div className="flex items-center gap-3 mb-6">
-                 <h4 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                    {activeExperience.company}
-                 </h4>
-                 <span className={`px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/10`}>
-                    {activeExperience.role}
-                 </span>
-               </div>
+              <div className="flex-1">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
+                  <h4 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                     {activeExperience.company}
+                  </h4>
+                  <span className={`px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/10 w-fit`}>
+                     {['ghraisoni', 'mvmbhopal'].includes(activeExperience.id) ? 'Education' : 'Work Experience'}
+                  </span>
+                </div>
                
                <div className="space-y-4">
                  {activeExperience.description.map((item, idx) => (
@@ -100,9 +103,7 @@ const Timeline: React.FC = () => {
              </div>
           </div>
           
-          <div className="mt-12 pt-8 border-t border-gray-800 flex justify-end">
-            <img src="https://via.placeholder.com/150x40?text=Logo" alt="Company Logo" className="opacity-30 grayscale hover:opacity-50 transition-opacity" />
-          </div>
+          <div className="mt-12 border-t border-gray-800"></div>
         </div>
       </div>
     </section>

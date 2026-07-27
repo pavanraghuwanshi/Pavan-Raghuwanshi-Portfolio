@@ -7,7 +7,7 @@ import { ChatMessage } from '../types';
 const AIChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: "Hi! I'm Varun's AI assistant. Ask me anything about his work, skills, or experience!", timestamp: new Date() }
+    { role: 'model', text: "Hi! I'm Pavan's AI assistant. Ask me anything about his work, skills, or experience!", timestamp: new Date() }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -55,7 +55,7 @@ const AIChatBot: React.FC = () => {
           <div className="bg-neutral-800 p-4 border-b border-gray-700 flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="font-semibold text-white">Varun's AI Assistant</span>
+              <span className="font-semibold text-white">Pavan's AI Assistant</span>
             </div>
             <button onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-white">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>

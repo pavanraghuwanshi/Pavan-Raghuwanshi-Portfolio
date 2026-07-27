@@ -87,8 +87,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$AIChatBot$2e$t
 ;
 ;
 const metadata = {
-    title: 'Sai Varun Reddy G | Full Stack Developer',
-    description: 'A high-performance, dark-themed developer portfolio featuring an interactive timeline, stats dashboard, and an AI-powered assistant.'
+    title: 'Pavan Raghuwanshi | Full Stack Developer',
+    description: 'Portfolio of Pavan Raghuwanshi - Full Stack Developer with 2+ years of experience specializing in Node.js, Express.js, MongoDB, Redis, and React.js.'
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {

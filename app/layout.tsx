@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar';
 import AIChatBot from '../components/AIChatBot';
 
 export const metadata = {
-  title: 'Sai Varun Reddy G | Full Stack Developer',
-  description: 'A high-performance, dark-themed developer portfolio featuring an interactive timeline, stats dashboard, and an AI-powered assistant.',
+  title: 'Pavan Raghuwanshi | Full Stack Developer',
+  description: 'Portfolio of Pavan Raghuwanshi - Full Stack Developer with 2+ years of experience specializing in Node.js, Express.js, MongoDB, Redis, and React.js.',
 };
 
 export default function RootLayout({

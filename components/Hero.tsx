@@ -1,4 +1,5 @@
 import React from 'react';
+import Terminal from './Terminal';
 
 const Hero: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const Hero: React.FC = () => {
           <a href="#contact" className="px-8 py-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(250,204,21,0.3)] hover:shadow-[0_0_30px_rgba(250,204,21,0.5)] transform hover:-translate-y-1">
             Hire Me
           </a>
-          <a href="#" className="flex items-center gap-2 text-purple-400 font-medium hover:text-purple-300 transition-colors group">
+          <a href="/Pavan-Raghuwanshi.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-purple-400 font-medium hover:text-purple-300 transition-colors group">
             <span className="border-b border-purple-400 group-hover:border-purple-300 pb-0.5">Download Resume</span>
             <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </a>
@@ -50,18 +51,8 @@ const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
            </div>
            
-           {/* Decorative floating elements */}
-           <div className="absolute -bottom-6 -left-6 bg-[#1a1a1a] p-4 rounded-xl border border-gray-800 shadow-xl hidden lg:block animate-bounce" style={{ animationDuration: '3s' }}>
-              <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
-                 </div>
-                 <div>
-                    <div className="text-xs text-gray-400">Coding</div>
-                    <div className="text-sm font-bold text-white">Clean & Modern</div>
-                 </div>
-              </div>
-           </div>
+           {/* Interactive Terminal */}
+           <Terminal />
         </div>
       </div>
     </section>
