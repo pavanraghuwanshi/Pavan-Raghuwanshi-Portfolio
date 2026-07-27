@@ -12,7 +12,7 @@ export const sendMessageToGemini = async (message: string, history: { role: 'use
 
   try {
     const ai = new GoogleGenAI({ apiKey });
-    const model = 'gemini-1.5-flash';
+    const model = 'gemini-2.5-flash';
     
     // Using chat for maintaining history context
     const chat = ai.chats.create({

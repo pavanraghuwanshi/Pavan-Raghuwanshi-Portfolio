@@ -338,7 +338,7 @@ Technical Skills:
 "[project]/services/geminiService.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"6092856a613e0149f64d1f748aae9adab53cae2657":"sendMessageToGemini"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"6036f06b4f929cb171347571f3c59083a92375875b":"sendMessageToGemini"},"",""] */ __turbopack_context__.s([
     "sendMessageToGemini",
     ()=>sendMessageToGemini
 ]);
@@ -358,7 +358,7 @@ const sendMessageToGemini = async (message, history = [])=>{
         const ai = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$google$2f$genai$2f$dist$2f$node$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GoogleGenAI"]({
             apiKey
         });
-        const model = 'gemini-1.5-flash';
+        const model = 'gemini-2.5-flash';
         // Using chat for maintaining history context
         const chat = ai.chats.create({
             model: model,
@@ -387,7 +387,7 @@ const sendMessageToGemini = async (message, history = [])=>{
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     sendMessageToGemini
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(sendMessageToGemini, "6092856a613e0149f64d1f748aae9adab53cae2657", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(sendMessageToGemini, "6036f06b4f929cb171347571f3c59083a92375875b", null);
 }),
 "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/services/geminiService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
@@ -400,7 +400,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$services$2f$geminiService$2e
 "use strict";
 
 __turbopack_context__.s([
-    "6092856a613e0149f64d1f748aae9adab53cae2657",
+    "6036f06b4f929cb171347571f3c59083a92375875b",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$services$2f$geminiService$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sendMessageToGemini"]
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$_not$2d$found$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$services$2f$geminiService$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i('[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => "[project]/services/geminiService.ts [app-rsc] (ecmascript)" } [app-rsc] (server actions loader, ecmascript) <locals>');
